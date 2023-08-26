@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+        <script src="https://kit.fontawesome.com/aa6d4ece91.js"></script>
+        <title>Open Library Search App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="top-left-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn80oAI-P1wAJMnxVndQpdovp-OYhZeh76QhL0WSwp&s" alt="PSG College of Techology">
+        </div>
+        <div class="container">
+            <h1>Search the Open Library</h1>
+            <div class="search">
+                <input type="text" id="search-box">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="results"></div>
+        </div>
+        <div class="footer">
+            <p>Results from the <a href="https://openlibrary.org/developers/api" target="_blank">Open Library API</a>
+        </div>
+        
+        <div id="modalAlert" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please enter a search term.</p>
+          </div>
+        </div>
+
+        <script src="app.js"></script>
+        <div class="footer1">
+            <p><a href="https://www.psgtech.edu/" target="_blank">Powered by PSG College of Technology</p></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+*{
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: rgb(65, 98, 227);
+  }
+  
+  .container {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-family: "Saira", sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family:"Saira", sans-serif;
+  }
+  
+  input {
+    width: 400px;
+    height: 35px;
+    margin: 5px;
+    border:3px solid rgb(221, 221, 221);
+    box-shadow: 0px 0px 10px 10px rgba(255,255,255,0.1);
+    transition: box-shadow 1000ms;
+  }
+  
+  input[type='text']:focus {
+    box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.5);
+  }
+  
+  input:-moz-placeholder {
+    color: rgb(204, 204, 204);
+  }
+  
+  button {
+    width: 120px;
+    height: 35px;
+    color: #fff;
+    background: rgb(6,14,131);
+    background-color: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: all 0.4s;
+  }
+  
+  button:hover {
+    background: rgb(250, 249, 249);
+    background-color: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+      -webkit-transition: background-color 800ms linear;
+      -ms-transition: background-color 800ms linear;
+      transition: background-color 800ms linear;
+    border: 0px;
+    cursor: pointer;
+  }
+  
+  button:active {
+    transform: translateY(1px) translateX(1px);
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .result {
+    margin: 20px auto;
+    padding: 10px;
+    text-align: left;
+    max-width: 600px;
+    background-color:rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius:2px;
+    font-size:15px;
+  }
+  
+  .result a {
+    font-size: 13px;
+    color: rgb(65,98,227);
+  }
+  
+  .result a:hover {
+    text-decoration: none;
+  }
+  
+  .result img {
+    width: 50px;
+    height: 75px;
+    float: left;
+    margin: 10px;
+  }
+  
+  #prevButton, #nextButton {
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .footer {
+    text-align:center;
+    padding:20px;
+    font-family: "Saira", sans-serif;
+    font-size:.9em;
+    font-weight:500;
+    color: rgb(255, 255, 255);
+  }
+  
+  .footer a {
+    color: rgb(255, 255, 255);
+  }
+  
+  .footer a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+  }
+  
+  /* modal alert background*/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* fallback */
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* modal content box */
+  .modal-content {
+    background-color: rgb(254, 254, 254);
+    margin: 70px auto;
+    padding: 20px;
+    border: 1px solid rgb(136, 136, 136);
+    width: 300px;
+  }
+  
+  /* Modal close button */
+  .close {
+    color: rgb(170, 170, 170);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .footer1 {
+    background-color: #a5fdd9;
+    color: lightseagreen;
+    padding: 5px;
+    text-align: center;
+    position: sticky;
+    margin-bottom: 0%;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer1 p:last-child {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #888;
+}
+  
+
+.top-left-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999; 
+}
+
+.top-left-image img {
+  width: 100px; 
+  height: auto;
+  margin-left: 20px;
+}
